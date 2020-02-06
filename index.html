@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Recipe Ku</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <style>
+      .success,
+      .error {
+        color: #fff;
+        padding: 5px;
+        margin: 5px 0 15px 0;
+      }
+      .success {
+        background: green;
+      }
+      .error {
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Add Your Recipe</h2>
+      <form id="recipe-form">
+        <div class="form-group">
+          <label for="foodname">Food Name</label>
+          <input type="text" class="form-control" id="foodname" />
+        </div>
+        <div class="form-group">
+          <label for="fromwhere">From Where</label>
+          <input type="text" class="form-control" id="fromwhere" />
+        </div>
+        <div class="form-group">
+          <label for="pricing">Price</label>
+          <input type="text" class="form-control" id="pricing" />
+        </div>
+        <div class="buttonku">
+          <input type="submit" value="submit" class="btn btn-primary" />
+        </div>
+      </form>
+
+      <!-- Table -->
+      <table class="table" style="margin-top: 20px;">
+        <thead>
+          <tr>
+            <th>Food Name</th>
+            <th>From Where</th>
+            <th>Price</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="myrecipelist"></tbody>
+      </table>
+    </div>
+    <!-- JS -->
+
+    <script src="es6.js"></script>
+  </body>
+</html>
